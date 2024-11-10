@@ -4,8 +4,6 @@ import { AppConstants } from "./constant";
 export class Ball extends BaseObject {
   private _velocity: number;
   private _direction: number;
-  private _speed: number = 0.5;
-  private _delayTime: number = 0;
   public mass: number = 1;
   constructor() {
     super("ball");
@@ -36,15 +34,14 @@ export class Ball extends BaseObject {
     const nextX =
       this.position.x -
       (Math.cos((newVelocity.angle * Math.PI) / 180) *
-        (newVelocity.velocity * (dt + this._delayTime) * this._speed)) /
+        (newVelocity.velocity * dt)) /
         1000;
     const nextY =
       this.position.y -
       (Math.sin((newVelocity.angle * Math.PI) / 180) *
-        (newVelocity.velocity * (dt + this._delayTime) * this._speed)) /
+        (newVelocity.velocity * dt)) /
         1000;
     this.position = { x: nextX, y: nextY };
-    this._delayTime = 0;
   }
 
   private _calculateNewVelocityAndDirection(): {
