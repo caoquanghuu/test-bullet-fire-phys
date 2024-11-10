@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "start": "yarn webpack serve --mode development",
+    "start-ip": "yarn start --host 0.0.0.0",
+    "build": "yarn webpack --mode development"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^5.0.1",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "globals": "^15.9.0",
+    "prettier": "^3.1.0",
+    "prettier-eslint": "^16.1.2",
+    "ts-loader": "^9.5.1",
+    "typescript": "*",
+    "typescript-eslint": "^8.4.0",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^5.6.0",
+    "pixi.js": "^8.3.4"
+  }
+}

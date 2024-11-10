@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>PixiJS TypeScript Webpack Project</title>
+    <style>
+      #input-container {
+        display: flex;
+        position: absolute;
+        margin-left: 3%;
+        margin-top: 3%;
+        background-color: aqua;
+      }
+      .text1 {
+        width: 400px;
+        height: 50px;
+        font-size: 36px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="input-container">
+      <input
+        type="number"
+        class="text1"
+        id="mass"
+        placeholder="Enter Mass Here"
+      />
+      <input type="number" class="text1" id="F" placeholder="Enter F Here" />
+      <input
+        type="number"
+        class="text1"
+        id="angle"
+        placeholder="Enter Angle Here"
+      />
+    </div>
+  </body>
+  <script>
+    function resetInput(inputId) {
+      const input = document.getElementById(inputId);
+      input.addEventListener("click", () => {
+        input.value = "";
+      });
+    }
+    resetInput("mass");
+    resetInput("angle");
+    resetInput("F");
+  </script>
+</html>
