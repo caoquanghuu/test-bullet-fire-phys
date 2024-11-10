@@ -12,7 +12,7 @@ import { GameScene } from "./GameScene";
     .init({
       background: AppConstants.appColor,
       width: AppConstants.appWidth,
-      height: AppConstants.appHeight,
+      height: AppConstants.appHeight
     })
     .then(() => {
       // Thả canvas của app vào body của HTML.
@@ -20,7 +20,7 @@ import { GameScene } from "./GameScene";
     });
   Assets.add({
     alias: "ball",
-    src: "./image/ball.png",
+    src: "./image/ball.png"
   });
   await Assets.load("ball");
   Assets.add({ alias: "peg", src: "./image/peg.png" });
