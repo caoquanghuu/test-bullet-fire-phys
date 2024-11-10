@@ -20,13 +20,13 @@ export class Map extends Container {
     }
 
     const text = new Text();
-    text.text = "fire";
+    text.text = "Fire";
     text.eventMode = "static";
     text.cursor = "pointer";
     text.style.fontSize = 60;
     text.position = {
       x: 1400,
-      y: 90
+      y: 80
     };
     text.on("pointerdown", () => {
       const ball = new Ball();
